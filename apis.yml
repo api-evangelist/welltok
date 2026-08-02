@@ -1,8 +1,24 @@
 aid: welltok
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/welltok.png
 name: Welltok
-description: 'Welltok is a company surfaced as a portfolio company of bessemer-venture-partners, emergence-capital
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Welltok is a data-driven, enterprise SaaS company that delivers a healthcare
+  consumer activation platform for health plans, employers, providers, and public entities,
+  using data, analytics, and personalized outreach to guide individuals to health actions.
+  It was surfaced as a portfolio company of bessemer-venture-partners and emergence-capital
+  and added to the API Evangelist network. As of this enrichment pass Welltok publishes
+  no public developer portal, API documentation, or machine-readable API surface; its
+  public web presence is a marketing and consumer-notice site.'
 url: https://raw.githubusercontent.com/api-evangelist/welltok/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Healthcare
+- SaaS
+- Consumer Engagement
+- Consumer Activation
+- Health Plans
+- Population Health
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/welltok-domain-security.yml
 - type: Website
   url: https://www.welltok.com/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
